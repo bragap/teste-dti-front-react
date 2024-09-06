@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

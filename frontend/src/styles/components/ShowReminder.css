@@ -1,0 +1,43 @@
+.show-container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.show-container .show-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #D0D5DD;
+}
+.show-container .show-title h3 {
+  color: #1472f3;
+}
+.show-container .show-title .show-counter {
+  background: #1472f3;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+@media (max-width: 768px) {
+  .show-container .show-title h3 {
+    font-size: 0.8rem;
+  }
+}
+.show-container .show-remainders {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+.show-container .card-date {
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+  color: #808080;
+}
+
+/*# sourceMappingURL=ShowReminder.css.map */

@@ -1,0 +1,31 @@
+@use "../variables" as var;
+
+.remainder-container{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  .remainder-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var.$separator-color;
+    border-radius: 10px;
+    padding: 10px;
+
+    button{
+      background: var.$background-primary;
+      border: var.$background-primary;
+      cursor: pointer;
+      color: red;
+    }
+    .remainder-name{
+      color: var.$default;
+      font-size: 0.8rem;
+    }
+    @media(max-width: 768px){
+      padding: 5px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #D0D5DD;
+}
+.header-content img {
+  height: 5rem;
+}
+@media (max-width: 768px) {
+  .header-content img {
+    height: 3rem;
+  }
+}
+.header-content h1 {
+  font-size: 4rem;
+  color: #1472f3;
+}
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,97 @@
+@use "../variables" as var;
+
+
+.create-remainder-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+
+  @media(max-width: 768px){
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.create-remainder-content{
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+
+  gap: 1rem;
+  padding: 1rem;
+
+        label{
+            color: var.$primary-color;
+            margin-right:1rem;
+        }
+
+        input{
+            height: 2rem;
+            padding: 0 5px;
+            border: 1px solid var.$border-color;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            color: var.$default;
+            &:focus{
+                outline: #FFFFFF;
+            }
+            &::placeholder{
+                color: var.$default;
+            }
+          &::-webkit-calendar-picker-indicator {
+            cursor:pointer;
+            filter: invert(0.8) brightness(50%) sepia(100%) saturate(10000%) hue-rotate(240deg);
+          }
+          @media(max-width: 768px){
+            width: 100%;
+          }
+        }
+
+        button{
+            height: 2rem;
+            width: 120px;
+            background-color: var.$primary-color;
+            color: var.$background-primary;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.4s;
+            font-weight: bolder;
+            letter-spacing: 1px;
+          display: flex;
+            justify-content: center;
+            gap:10px;
+            align-items: center;
+
+            &:hover{
+                background-color: var.$border-color;
+                color: var.$primary-color;
+            }
+
+           @media(max-width: 768px){
+            width: 100%;
+          }
+        }
+
+
+  @media(max-width: 768px){
+    flex-direction: column;
+    padding: 1rem 0 0 0;
+  }
+
+}
+
+.create-remainder-error{
+    display: flex;
+    justify-content: center;
+    color: red;
+    width:100%;
+  @media(max-width: 768px){
+    margin-top: 10px;
+  }
+}

@@ -11,7 +11,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/reminders")
+@RequestMapping("/reminders")
 public class ReminderController {
 
     @Autowired

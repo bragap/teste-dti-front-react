@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity
+@Table(name = "reminders")
 public class Reminder {
 
     @Id
@@ -16,7 +17,6 @@ public class Reminder {
     @Column(nullable = false)
     private LocalDate date;
 
-    
     public Long getId() {
         return id;
     }
@@ -40,4 +40,5 @@ public class Reminder {
     public void setDate(LocalDate date) {
         this.date = date;
     }
+
 }

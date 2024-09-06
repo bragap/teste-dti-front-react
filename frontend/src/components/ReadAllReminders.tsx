@@ -1,14 +1,29 @@
 import "../styles/components/ShowReminder.scss";
-import CardReminder from "./CardReminder.tsx";
+import CardReminder from "./CardReminder";
 import { useReadReminder } from '../hooks/useReadReminder';
+import { Reminder } from "../utils/interfaces";
+import { formatDate } from "../utils/formatDate";
 
+const sortRemindersByDate = (reminders: Reminder[]) => {
+	return [...reminders].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+};
 
-export default function ReadAllReminders(){
+export default function ReadAllReminders() {
 	const { reminders, error, loading } = useReadReminder();
 
-	console.log(reminders,"reminders")
 	if (loading) return <p>Carregando lembretes...</p>;
 	if (error) return <p>Erro ao carregar lembretes: {error}</p>;
+
+	const sortedReminders = sortRemindersByDate(reminders);
+
+	const groupedReminders = sortedReminders.reduce((groups, reminder) => {
+		const date = formatDate(reminder.date);
+		if (!groups[date]) {
+			groups[date] = [];
+		}
+		groups[date] = [...groups[date], reminder];
+		return groups;
+	}, {} as { [key: string]: Reminder[] });
 
 	return (
 		<section className="show-container">
@@ -18,10 +33,12 @@ export default function ReadAllReminders(){
 			</div>
 
 			<div className="show-remainders">
-				{reminders.map((reminder, index) => (
-					<div key={index} className="card-date">
-						<div>Data: {new Date(reminder.date).toLocaleDateString()}</div>
-						<CardReminder reminder={reminder} />
+				{Object.keys(groupedReminders).map(date => (
+					<div key={date} className="card-date">
+						<div>{date}</div>
+						{groupedReminders[date].map(reminder => (
+							<CardReminder key={reminder.id} reminder={reminder} />
+						))}
 					</div>
 				))}
 			</div>

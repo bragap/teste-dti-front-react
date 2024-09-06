@@ -8,10 +8,7 @@ interface CardReminderProps {
 }
 
 export default function CardReminder({reminder}: CardReminderProps)  {
-
 	const { deleteReminder } = useDeleteReminder();
-
-
 	const handleDelete = () => {
 		deleteReminder(reminder.id);
 	};

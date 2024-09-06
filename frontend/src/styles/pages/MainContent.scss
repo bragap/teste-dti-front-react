@@ -1,0 +1,14 @@
+@use "../variables" as var;
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: var.$font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media(max-width: 768px){
+    max-width: 500px;
+  }
+}

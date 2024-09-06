@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["CardReminder.scss","../variables.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE,YCde;EDef,QCfe;EDgBf;EACA;;AAEF;EACE,OCnBI;EDoBJ;;AAEF;EAlBF;IAmBI","file":"CardReminder.css"}
+{"version":3,"sourceRoot":"","sources":["CardReminder.scss","../variables.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE,YCde;EDef;EACA;EACA,OChBI;;ADiBJ;EACE,OCpBQ;EDqBR;;AAIJ;EACE,OCxBI;EDyBJ;;AAGF;EAxBF;IAyBI","file":"CardReminder.css"}

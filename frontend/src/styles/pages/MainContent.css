@@ -4,6 +4,7 @@
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 @media (max-width: 768px) {
   .container {
@@ -11,4 +12,4 @@
   }
 }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=MainContent.css.map */

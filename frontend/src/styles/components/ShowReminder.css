@@ -1,7 +1,7 @@
 .show-container {
   width: 90%;
   margin: 0 auto;
-  padding-top: 20px;
+  padding: 20px 0 40px 0;
   display: flex;
   flex-direction: column;
 }
@@ -17,8 +17,8 @@
   color: #1472f3;
 }
 .show-container .show-title .show-counter {
-  background: #1472f3;
-  color: #FFFFFF;
+  background: #f1c232;
+  color: #1472f3;
   padding: 5px 10px;
   border-radius: 30px;
 }

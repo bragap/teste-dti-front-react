@@ -1,12 +1,12 @@
 @use "../variables" as var;
 
-.remainder-container{
+.remainder-container {
   width: 100%;
-  margin: 0 auto;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
 
-  .remainder-content{
+  .remainder-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,17 +14,23 @@
     border-radius: 10px;
     padding: 10px;
 
-    button{
+    button {
       background: var.$background-primary;
-      border: var.$background-primary;
+      border: none;
       cursor: pointer;
-      color: red;
+      color: var.$default;
+      &:hover{
+        color: var.$primary-color;
+        transition: color 0.5s;
+      }
     }
-    .remainder-name{
+
+    .remainder-name {
       color: var.$default;
       font-size: 0.8rem;
     }
-    @media(max-width: 768px){
+
+    @media(max-width: 768px) {
       padding: 5px;
     }
   }

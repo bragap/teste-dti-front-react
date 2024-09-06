@@ -1,15 +1,10 @@
-import Header from "./components/Header";
-import MainContent from "./components/MainContent.tsx";
-import "./styles/components/App.scss";
+import MainContent from "./pages/MainContent.tsx";
 
 function App() {
-
-
   return (
-    <main className="container">
-    <Header />
-    <MainContent />
-    </main>
+    <>
+    <MainContent/>
+    </>
   )
 }
 

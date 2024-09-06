@@ -69,7 +69,7 @@
             align-items: center;
 
             &:hover{
-                background-color: var.$border-color;
+                background-color: var.$secondary-color;
                 color: var.$primary-color;
             }
 
@@ -95,3 +95,35 @@
     margin-top: 10px;
   }
 }
+
+
+  .success-dialog {
+    width: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #dff0d8;
+    color: #3c763d;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .error-dialog{
+      width: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #f2dede;
+    color: #a94442;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+

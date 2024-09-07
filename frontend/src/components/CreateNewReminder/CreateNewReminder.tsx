@@ -1,5 +1,5 @@
-import "../styles/components/CreateNewReminder.scss";
-import { useCreateReminder } from '../hooks/useCreateReminder';
+import "../../styles/components/CreateNewReminder.scss";
+import { useCreateReminder } from '../../hooks/useCreateReminder/useCreateReminder.ts';
 import { useEffect, useState } from 'react';
 
 export default function CreateNewReminder() {

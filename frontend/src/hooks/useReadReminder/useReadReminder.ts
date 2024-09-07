@@ -1,8 +1,8 @@
 import {useEffect, useState} from 'react';
-import api from '../config/api.ts';
+import api from '../../config/api.ts';
 import { useSelector, useDispatch } from 'react-redux';
-import {AppDispatch, RootState} from '../redux/store';
-import { getAllReminder } from '../redux/remindersSlice';
+import {AppDispatch, RootState} from '../../redux/store.ts';
+import { getAllReminder } from '../../redux/remindersSlice.ts';
 
 export const useReadReminder = () => {
 	const dispatch = useDispatch<AppDispatch>();

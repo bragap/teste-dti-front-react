@@ -1,6 +1,6 @@
-import CreateNewReminder from "../components/CreateNewReminder.tsx";
-import ReadAllReminders from "../components/ReadAllReminders.tsx";
-import Header from "../components/Header.tsx";
+import CreateNewReminder from "../components/CreateNewReminder/CreateNewReminder.tsx";
+import ReadAllReminders from "../components/ReadAllReminders/ReadAllReminders.tsx";
+import Header from "../components/Header/Header.tsx";
 import "../styles/pages/MainContent.scss";
 
 export default function MainContent(){

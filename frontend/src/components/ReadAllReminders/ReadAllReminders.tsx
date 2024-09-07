@@ -1,8 +1,8 @@
-import "../styles/components/ShowReminder.scss";
-import CardReminder from "./CardReminder";
-import { useReadReminder } from '../hooks/useReadReminder';
-import { Reminder } from "../utils/interfaces";
-import { formatDate } from "../utils/formatDate";
+import "../../styles/components/ShowReminder.scss";
+import CardReminder from "../CardReminder/CardReminder.tsx";
+import { useReadReminder } from '../../hooks/useReadReminder/useReadReminder.ts';
+import { Reminder } from "../../utils/interfaces.ts";
+import { formatDate } from "../../utils/formatDate/formatDate.ts";
 
 const sortRemindersByDate = (reminders: Reminder[]) => {
 	return [...reminders].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());

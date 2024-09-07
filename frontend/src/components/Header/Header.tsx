@@ -1,6 +1,6 @@
 
 import lembreLogo from '/lembre.svg';
-import "../styles/components/Header.scss";
+import "../../styles/components/Header.scss";
 
 
 export default function Header(){

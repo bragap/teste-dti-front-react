@@ -1,7 +1,7 @@
 import { Trash } from "lucide-react"
-import "../styles/components/CardReminder.scss";
-import { Reminder } from "../utils/interfaces.ts";
-import {useDeleteReminder} from "../hooks/useDeleteReminder.ts";
+import "../../styles/components/CardReminder.scss";
+import { Reminder } from "../../utils/interfaces.ts";
+import {useDeleteReminder} from "../../hooks/useDeleteReminder/useDeleteReminder.ts";
 
 interface CardReminderProps {
 	reminder: Reminder;

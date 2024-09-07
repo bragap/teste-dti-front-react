@@ -12,7 +12,7 @@ export default function ReadAllReminders() {
 	const { reminders, error, loading } = useReadReminder();
 
 	if (loading) return <p>Carregando lembretes...</p>;
-	if (error) return <p>Erro ao carregar lembretes: {error}</p>;
+	if (error) return <p className="create-remainder-error">Erro ao carregar lembretes. Tente novamente mais tarde.</p>;
 
 	const sortedReminders = sortRemindersByDate(reminders);
 

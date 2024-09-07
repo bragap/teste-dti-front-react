@@ -1,5 +1,6 @@
 ![alt text](image.png)
-lembre é uma aplicação full-stack que permite aos usuários controlar seus lembretes mais importantes. O backend é construído com Java e Spring Boot, seguindo os padrões RESTful, enquanto o frontend é desenvolvido usando React e TypeScript com Vite como ferramenta de build. Para estilização, foi utilizado o pré-processador Sass. Para manipular dados, foram criados hooks customizados junto do Redux. A aplicação é responsiva e os testes unitários se encontram em: 
+
+#### lembre é uma aplicação full-stack que permite aos usuários controlar seus lembretes mais importantes. O backend é construído com Java e Spring Boot, seguindo os padrões RESTful, enquanto o frontend é desenvolvido usando React e TypeScript com Vite como ferramenta de build. Para estilização, foi utilizado o pré-processador Sass. Para manipular dados, foram criados hooks customizados junto do Redux. A aplicação é responsiva e os testes unitários se encontram em: 
 
 *******
 

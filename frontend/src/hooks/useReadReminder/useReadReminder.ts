@@ -19,6 +19,7 @@ export const useReadReminder = () => {
 			return true;
 		} catch (error) {
 			setError(`Erro ao buscar lembretes: ${error}`);
+			dispatch(getAllReminder([]));
 			return false;
 		} finally {
 			setLoading(false);
@@ -29,5 +30,5 @@ export const useReadReminder = () => {
 		readReminder();
 	}, [dispatch]);
 
-	return { reminders, error, loading };
+	return { reminders, error, loading, readReminder };
 }

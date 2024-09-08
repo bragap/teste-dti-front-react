@@ -1,12 +1,12 @@
 @use "../variables" as var;
 
-.remainder-container {
+.reminder-container {
   width: 100%;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
 
-  .remainder-content {
+  .reminder-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,7 @@
       }
     }
 
-    .remainder-name {
+    .reminder-name {
       color: var.$default;
       font-size: 0.8rem;
     }

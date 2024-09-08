@@ -1,7 +1,7 @@
 // @ts-expect-error: React é importado automaticamente com o runtime automático do JSX
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
-import ReadAllReminders from './ReadAllReminders';
+import ShowReminders from './ShowReminders.tsx';
 import { useReadReminder } from '../../hooks/useReadReminder/useReadReminder';
 import { Reminder } from '../../utils/interfaces';
 import { Provider } from 'react-redux';
@@ -10,7 +10,7 @@ import getAllReminder from '../../redux/remindersSlice.ts';
 
 jest.mock('../../hooks/useReadReminder/useReadReminder');
 
-describe('ReadAllReminders Component', () => {
+describe('ShowReminders Component', () => {
 	const mockReminders: Reminder[] = [
 		{ id: 1, name: 'Lembrete 1', date: '2024-10-10' },
 		{ id: 2, name: 'Lembrete 2', date: '2024-10-12' },
@@ -36,21 +36,21 @@ describe('ReadAllReminders Component', () => {
 
 		it('should show loading message when loading reminders', () => {
 		setupMocks({ loading: true });
-		render(<ReadAllReminders />);
+		render(<ShowReminders />);
 
 		expect(screen.getByText(/Carregando lembretes.../i)).toBeInTheDocument();
 	});
 
 	it('should show error message when there is an error', () => {
 		setupMocks({ error: 'Erro ao carregar lembretes' });
-		render(<ReadAllReminders />);
+		render(<ShowReminders />);
 
 		expect(screen.getByText(/Erro ao carregar lembretes/i)).toBeInTheDocument();
 	});
 
 	it('should render reminders when available', async () => {
 		setupMocks({ reminders: mockReminders });
-		renderWithRedux(<ReadAllReminders />);
+		renderWithRedux(<ShowReminders />);
 
 		await waitFor(() => {
 			expect(screen.getByText(/Lembretes criados/i)).toBeInTheDocument();
@@ -62,7 +62,7 @@ describe('ReadAllReminders Component', () => {
 
 	it('should group reminders by date', async () => {
 		setupMocks({ reminders: mockReminders });
-		renderWithRedux(<ReadAllReminders />);
+		renderWithRedux(<ShowReminders />);
 
 		await waitFor(() => {
 			expect(screen.getByText(/10\/10\/2024/i)).toBeInTheDocument();

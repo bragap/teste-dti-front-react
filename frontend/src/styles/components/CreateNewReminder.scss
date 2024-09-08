@@ -1,7 +1,7 @@
 @use "../variables" as var;
 
 
-.create-remainder-container{
+.create-reminder-container{
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -16,7 +16,7 @@
   }
 }
 
-.create-remainder-content{
+.create-reminder-content{
   width: 100%;
   display: flex;
   flex-wrap:wrap;
@@ -86,7 +86,7 @@
 
 }
 
-.create-remainder-error{
+.create-reminder-error{
     display: flex;
     justify-content: center;
     color: red;

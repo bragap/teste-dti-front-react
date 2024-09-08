@@ -1,4 +1,4 @@
-.create-remainder-container {
+.create-reminder-container {
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -7,14 +7,14 @@
   align-items: center;
 }
 @media (max-width: 768px) {
-  .create-remainder-container {
+  .create-reminder-container {
     flex-direction: column;
     max-width: 90%;
     margin: 0 auto;
   }
 }
 
-.create-remainder-content {
+.create-reminder-content {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -22,11 +22,11 @@
   gap: 1rem;
   padding: 1rem;
 }
-.create-remainder-content label {
+.create-reminder-content label {
   color: #1472f3;
   margin-right: 1rem;
 }
-.create-remainder-content input {
+.create-reminder-content input {
   height: 2rem;
   padding: 0 5px;
   border: 1px solid #D0D5DD;
@@ -34,22 +34,22 @@
   margin-bottom: 1rem;
   color: #808080;
 }
-.create-remainder-content input:focus {
+.create-reminder-content input:focus {
   outline: #FFFFFF;
 }
-.create-remainder-content input::placeholder {
+.create-reminder-content input::placeholder {
   color: #808080;
 }
-.create-remainder-content input::-webkit-calendar-picker-indicator {
+.create-reminder-content input::-webkit-calendar-picker-indicator {
   cursor: pointer;
   filter: invert(0.8) brightness(50%) sepia(100%) saturate(10000%) hue-rotate(240deg);
 }
 @media (max-width: 768px) {
-  .create-remainder-content input {
+  .create-reminder-content input {
     width: 100%;
   }
 }
-.create-remainder-content button {
+.create-reminder-content button {
   height: 2rem;
   width: 120px;
   background-color: #1472f3;
@@ -65,30 +65,30 @@
   gap: 10px;
   align-items: center;
 }
-.create-remainder-content button:hover {
+.create-reminder-content button:hover {
   background-color: #f1c232;
   color: #1472f3;
 }
 @media (max-width: 768px) {
-  .create-remainder-content button {
+  .create-reminder-content button {
     width: 100%;
   }
 }
 @media (max-width: 768px) {
-  .create-remainder-content {
+  .create-reminder-content {
     flex-direction: column;
     padding: 1rem 0 0 0;
   }
 }
 
-.create-remainder-error {
+.create-reminder-error {
   display: flex;
   justify-content: center;
   color: red;
   width: 100%;
 }
 @media (max-width: 768px) {
-  .create-remainder-error {
+  .create-reminder-error {
     margin-top: 10px;
   }
 }

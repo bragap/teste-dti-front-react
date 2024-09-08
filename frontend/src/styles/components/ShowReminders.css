@@ -27,7 +27,7 @@
     font-size: 0.8rem;
   }
 }
-.show-container .show-remainders {
+.show-container .show-reminders {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -40,4 +40,21 @@
   color: #808080;
 }
 
-/*# sourceMappingURL=ShowReminder.css.map */
+.error-fetching-data {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.no-reminders {
+  color: #808080;
+  text-align: center;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .no-reminders {
+    font-size: 0.8rem;
+  }
+}
+
+/*# sourceMappingURL=ShowReminders.css.map */

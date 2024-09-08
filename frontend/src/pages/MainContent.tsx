@@ -1,5 +1,5 @@
 import CreateNewReminder from "../components/CreateNewReminder/CreateNewReminder.tsx";
-import ReadAllReminders from "../components/ReadAllReminders/ReadAllReminders.tsx";
+import ShowReminders from "../components/ShowReminders/ShowReminders.tsx";
 import Header from "../components/Header/Header.tsx";
 import "../styles/pages/MainContent.scss";
 
@@ -9,7 +9,7 @@ export default function MainContent(){
 		<main className="container">
 			<Header/>
 			<CreateNewReminder/>
-			<ReadAllReminders/>
+			<ShowReminders/>
 		</main>
 	)
 }

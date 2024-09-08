@@ -48,8 +48,8 @@ export default function CreateNewReminder() {
 	}, [showError]);
 
 	return (
-		<section className="create-remainder-container">
-			<form className="create-remainder-content" onSubmit={handleSubmit}>
+		<section className="create-reminder-container">
+			<form className="create-reminder-content" onSubmit={handleSubmit}>
 				<div>
 					<label htmlFor="remainderTitle">Nome*</label>
 					<input

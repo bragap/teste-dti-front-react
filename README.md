@@ -177,6 +177,7 @@ Parâmetros:
 
 2. O estado do sistema é mantido na interface via Redux, com persistência no backend.
 
+3. Todos os componentes e hooks da aplicação foram cobertos por testes automatizados usando React Testing Library e Jest.
 
 <div id='decisoes'/>
 
@@ -198,3 +199,5 @@ Parâmetros:
 8. Padrão MVC (Model-View-Controller) no Backend: Foi utilizado o padrão MVC no backend para organizar a lógica de negócio e a interação com o banco de dados.
 
 9. Padrão RESTful para APIs: As APIs desenvolvidas seguem o padrão RESTful, garantindo que as rotas estejam organizadas de forma semântica e intuitiva. 
+
+10. Testes unitários foram implementados para garantir a qualidade do código. Testes end-to-end não foram usados inicialmente.

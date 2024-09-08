@@ -10,6 +10,10 @@ export interface RemindersState {
 	error: string | null;
 }
 
+export interface CardReminderProps {
+	reminder: Reminder;
+}
+
 export const initialState: RemindersState = {
 	list: [],
 	status: 'idle',

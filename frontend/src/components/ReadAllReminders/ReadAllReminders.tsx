@@ -3,10 +3,8 @@ import CardReminder from "../CardReminder/CardReminder.tsx";
 import { useReadReminder } from '../../hooks/useReadReminder/useReadReminder.ts';
 import { Reminder } from "../../utils/interfaces.ts";
 import { formatDate } from "../../utils/formatDate/formatDate.ts";
+import { sortRemindersByDate } from "../../utils/sortRemindersByDate/sortRemindersByDate.ts";
 
-const sortRemindersByDate = (reminders: Reminder[]) => {
-	return [...reminders].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
-};
 
 export default function ReadAllReminders() {
 	const { reminders, error, loading } = useReadReminder();

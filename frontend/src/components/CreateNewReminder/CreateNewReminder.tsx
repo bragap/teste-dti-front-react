@@ -19,7 +19,6 @@ export default function CreateNewReminder() {
 			setDate('');
 			setSuccess(true);
 		} else {
-			// Se necessário, definir o estado de erro aqui
 			setShowError(true);
 		}
 	};
@@ -30,7 +29,7 @@ export default function CreateNewReminder() {
 		if (success) {
 			timer = setTimeout(() => {
 				setSuccess(false);
-			}, 2000); // Mostrar por 2 segundos
+			}, 2000);
 		}
 
 		return () => clearTimeout(timer);
@@ -42,7 +41,7 @@ export default function CreateNewReminder() {
 		if (showError) {
 			timer = setTimeout(() => {
 				setShowError(false);
-			}, 2000); // Mostrar por 2 segundos
+			}, 2000);
 		}
 
 		return () => clearTimeout(timer);

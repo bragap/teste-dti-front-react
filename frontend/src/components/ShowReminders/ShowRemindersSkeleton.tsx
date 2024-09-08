@@ -3,7 +3,7 @@ import "../../styles/components/ShowRemindersSkeleton.scss";
 
 const ShowRemindersSkeleton: React.FC = () => {
 	return (
-		<section className="show-container-skeleton">
+		<section className="show-container-skeleton" data-testid="show-reminders-skeleton">
 			<div className="show-title-skeleton">
 				<div className="title-skeleton"></div>
 				<div className="counter-skeleton"></div>

@@ -37,8 +37,7 @@ describe('ShowReminders Component', () => {
 		it('should show loading message when loading reminders', () => {
 		setupMocks({ loading: true });
 		render(<ShowReminders />);
-
-		expect(screen.getByText(/Carregando lembretes.../i)).toBeInTheDocument();
+		expect(screen.getByTestId('show-reminders-skeleton')).toBeInTheDocument();
 	});
 
 	it('should show error message when there is an error', () => {

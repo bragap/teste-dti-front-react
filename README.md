@@ -1,6 +1,6 @@
 ![alt text](./frontend/public/image.png)
 
-#### lembre é uma aplicação full-stack que permite aos usuários controlar seus lembretes mais importantes. O backend é construído com Java e Spring Boot, seguindo os padrões RESTful, enquanto o frontend é desenvolvido usando React e TypeScript com Vite como ferramenta de build. Para estilização, foi utilizado o pré-processador Sass. Para manipular dados, foram criados hooks customizados junto do Redux. A aplicação é responsiva e os testes unitários se encontram em: 
+#### lembre é uma aplicação full-stack que permite aos usuários controlar seus lembretes mais importantes. O backend é construído com Java e Spring Boot, seguindo os padrões RESTful, enquanto o frontend é desenvolvido usando React e TypeScript com Vite como ferramenta de build. Para estilização, foi utilizado o pré-processador Sass. Para manipular dados, foram criados hooks customizados junto do Redux. A aplicação é responsiva e os testes unitários se encontram nas pastas dos componentes e hooks. 
 
 *******
 
@@ -10,8 +10,9 @@
 3. [Configuração do Backend](#backend)
 4. [Configuração do Frontend](#frontend)
 5. [Endpoints da API](#endpoints)
-6. [Premissas Assumidas](#premissas)
-7. [Decisões de Projeto](#decisoes)
+6. [Testes](#testes)
+7. [Premissas Assumidas](#premissas)
+8. [Decisões de Projeto](#decisoes)
 
 *******
 
@@ -168,6 +169,14 @@ Parâmetros:
  - id (path variable): ID do lembrete a ser deletado.
 
 
+<div id='testes'/>
+
+## Testes
+
+- Os testes localizam-se dentro de cada pasta de Components, Hooks e Utils.
+Existem testes para os seguintes artefatos: CreateNewReminder.tsx, ShowReminders.tsx, useCreateReminder.ts, useDeleteReminder.ts, useReadReminder.ts, formatDate.ts, sortRemindersByDate.ts.
+
+
 
 <div id='premissas'/>
 
@@ -182,15 +191,15 @@ Parâmetros:
 <div id='decisoes'/>
 
 ## Decisões de Projeto
-1. Arquitetura baseada em componentes: A aplicação segue o padrão de desenvolvimento com componentes no React, garantindo uma estrutura modular e reutilizável. Cada funcionalidade do sistema (criação de lembretes, exibição de lembretes) está encapsulada em componentes independentes.
+1. A aplicação segue o padrão de desenvolvimento com componentes no React, garantindo uma estrutura modular e reutilizável. Cada funcionalidade do sistema (criação de lembretes, exibição de lembretes) está encapsulada em componentes independentes.
 
-2. Gerenciamento de Estado com Redux: Redux foi utilizado para centralizar o estado global da aplicação. Isso permite que diferentes partes da aplicação acessem e modifiquem o estado de forma previsível e eficiente.
+2. Redux foi utilizado para centralizar o estado global da aplicação. Isso permite que diferentes partes da aplicação acessem e modifiquem o estado de forma previsível e eficiente.
 
-3. Hooks Customizados: A lógica para comunicação com a API foi abstraída em hooks customizados (useCreateReminder, useReadReminder, useDeleteReminder).
+3. A lógica para comunicação com a API foi abstraída em hooks customizados (useCreateReminder, useReadReminder, useDeleteReminder).
 
-4. Uso de Dialogs Dinâmicos para Feedback ao Usuário: Para melhorar a experiência do usuário, modais/dialogs são exibidos dinamicamente quando ações são concluídas com sucesso ou falham.
+4. Para melhorar a experiência do usuário, modais/dialogs são exibidos dinamicamente quando ações são concluídas com sucesso ou falham.
 
-5. Estilização Modular com SCSS: Cada componente possui seu próprio arquivo de estilos .scss, garantindo que o escopo de estilos seja isolado. Isso facilita a manutenção e permite que cada parte da interface tenha sua estilização de forma independente, seguindo as boas práticas de CSS modular.
+5. Cada componente possui seu próprio arquivo de estilos .scss, garantindo que o escopo de estilos seja isolado.
 
 6. Configuração de CORS e Comunicação com API: A aplicação utiliza Axios para realizar requisições HTTP ao backend Spring Boot. O backend está configurado para permitir requisições CORS vindas do frontend em React.
 

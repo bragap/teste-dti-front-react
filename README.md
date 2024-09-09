@@ -176,6 +176,16 @@ Parâmetros:
 - Os testes localizam-se dentro de cada pasta de Components, Hooks e Utils.
 Existem testes para os seguintes artefatos: CreateNewReminder.tsx, ShowReminders.tsx, useCreateReminder.ts, useDeleteReminder.ts, useReadReminder.ts, formatDate.ts, sortRemindersByDate.ts.
 
+- Para rodar os testes, você deve:
+1. Acessar o projeto frontend:
+```bash
+cd frontend
+```
+
+2. Executar o comando:
+```bash
+npm run test
+```
 
 
 <div id='premissas'/>
